@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>소리짓 · VoiceTypo</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<style>
+:root{--bg:#ffffff;--bg2:#f4f6f8;--ink:#0e0f12;--ink2:#3b3f47;--gray:#6b7280;--gray2:#a4a9b3;--line:#e7e9ee;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Pretendard Variable",Pretendard,-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 6vw;border-bottom:1px solid var(--line);}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.02em;}
+.logo .mk{width:13px;height:13px;border-radius:50%;background:var(--ink);display:inline-block;}
+.logo small{color:var(--gray);font-weight:600;font-size:13px;}
+.step{font-size:13px;color:var(--gray);} .step b{color:var(--ink);font-weight:700;}
+.hero{padding:clamp(56px,9vw,120px) 6vw clamp(30px,5vw,56px);max-width:1100px;}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);}
+.hero h1{font-size:clamp(34px,6vw,68px);font-weight:800;letter-spacing:-.035em;line-height:1.05;margin-top:18px;}
+.hero p{font-size:clamp(15px,1.7vw,18px);color:var(--ink2);margin-top:22px;max-width:680px;}
+.hero p b{color:var(--ink);font-weight:700;}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;padding:clamp(20px,3vw,40px) 6vw 90px;max-width:1100px;}
+@media(max-width:760px){.cards{grid-template-columns:1fr;}}
+.card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:22px;padding:clamp(26px,3vw,40px);background:#fff;transition:border-color .18s,transform .18s;}
+.card:hover{border-color:var(--ink);transform:translateY(-3px);}
+.card .n{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--gray2);}
+.card h2{font-size:clamp(22px,2.6vw,30px);font-weight:800;letter-spacing:-.02em;margin-top:12px;}
+.card .d{font-size:14px;color:var(--ink2);margin-top:14px;line-height:1.7;}
+.card .d b{color:var(--ink);font-weight:700;}
+.card .go{display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-size:13px;font-weight:700;color:var(--ink);}
+.card .go .ar{transition:transform .18s;} .card:hover .go .ar{transform:translateX(4px);}
+.foot{padding:40px 6vw 70px;color:var(--gray2);font-size:12.5px;border-top:1px solid var(--line);}
+.foot a{color:var(--gray);text-decoration:none;border-bottom:1px solid var(--line);}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="logo"><span class="mk"></span> 소리짓 <small>· VoiceTypo</small></div>
+  <div class="step">중간 발표 <b>자료</b></div>
+</header>
+
+<section class="hero">
+  <div class="kicker">Voice → Visual Language</div>
+  <h1>목소리를 글자로<br>번역한다</h1>
+  <p>목소리의 차원(모음·세기·높이·떨림·길이)을 시각 변수로 옮기는 <b>규칙(매핑)</b>을 설계하고, 그 규칙이 만드는 시각 체계를 만든다. 아래 두 자료로 정리했다.</p>
+</section>
+
+<div class="cards">
+  <a class="card" href="mapping.html">
+    <div class="n">01 — 매핑</div>
+    <h2>매핑 표 + 움직이는 데모</h2>
+    <p class="d">소리의 어떤 특징을 글자의 어떤 요소로 옮길지 <b>표로 정리</b>하고, 그 규칙을 <b>실제 움직이는 글자 데모</b>로 보여준다. "그래서 소리가 글자에 이렇게 나타난다."</p>
+    <span class="go">보기 <span class="ar">→</span></span>
+  </a>
+  <a class="card" href="references.html">
+    <div class="n">02 — 레퍼런스</div>
+    <h2>레퍼런스 모음</h2>
+    <p class="d">소리·목소리를 시각으로 옮긴 작업들. <b>심층 레퍼런스</b>(Sprayable Sound · Golan Levin · 김치앤칩스 · 논문)와 <b>인스타·작품 영상</b> 사례.</p>
+    <span class="go">보기 <span class="ar">→</span></span>
+  </a>
+</div>
+
+<footer class="foot">
+  소리짓 · VoiceTypo — 디자인팀 중간 발표 자료 · <a href="https://hurjwon.github.io/voicetypo-stage2/stage2.html" target="_blank" rel="noopener">stage2 ↗</a>
+</footer>
+</body>
+</html>
